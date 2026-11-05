@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "project_id": "demo",
+  "context_files": ["README.md"],
+  "checks": [
+    {"name": "unit", "argv": ["{python}", "-m", "unittest", "discover"], "timeout_seconds": 120},
+    {"name": "lint", "argv": ["{python}", "-m", "compileall", "-q", "."], "timeout_seconds": 60}
+  ],
+  "secret_names": []
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "DEMO-001",
+  "title": "Add a greet() function",
+  "outcome": "greet(name) returns a greeting for the given name and rejects empty names.",
+  "acceptance": [
+    "greet('Ada') returns 'Hello, Ada!'.",
+    "greet('') raises ValueError."
+  ],
+  "scope": ["src", "tests"],
+  "dependencies": [],
+  "base_sha": "REPLACE_WITH_OUTPUT_OF_git_rev-parse_HEAD",
+  "check_names": ["unit"],
+  "max_attempts": 2,
+  "provider": "manual",
+  "model": null
+}

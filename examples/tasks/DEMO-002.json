@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "DEMO-002",
+  "title": "Add a CLI wrapper for greet()",
+  "outcome": "Running 'python -m demo Ada' prints the greeting.",
+  "acceptance": [
+    "'python -m demo Ada' prints 'Hello, Ada!' and exits 0.",
+    "'python -m demo' with no argument exits non-zero with a usage message."
+  ],
+  "scope": ["src", "tests"],
+  "dependencies": ["DEMO-001"],
+  "base_sha": "REPLACE_WITH_OUTPUT_OF_git_rev-parse_HEAD",
+  "check_names": ["unit", "lint"],
+  "max_attempts": 2,
+  "provider": "manual",
+  "model": null
+}
