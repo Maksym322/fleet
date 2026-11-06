@@ -28,10 +28,18 @@ Exit codes: 0 done, 1 timeout, 2 failed, 3 usage error.
 
 Prerequisites: Python 3.12+ and git. An AI CLI (Claude Code or Codex) is needed for the skills, not for the helper.
 
-Install as a Claude Code plugin: clone this repo, then start Claude Code with `claude --plugin-dir /path/to/fleet`
-(or add it through your plugin marketplace).
-Install as a Codex plugin: clone the repo where Codex loads plugins; it reads `.codex-plugin/plugin.json`.
-Plugin loading options change between releases, so check your CLI's plugin docs.
+### Install
+
+| Tool | Install | Status |
+| --- | --- | --- |
+| Claude Code | `/plugin marketplace add Maksym322/fleet` then `/plugin install fleet@fleet` (CLI: `claude plugin marketplace add Maksym322/fleet && claude plugin install fleet@fleet`) | Tested: installs, lists 6 skills, runs the helper |
+| Codex CLI | `codex plugin marketplace add Maksym322/fleet` then `codex plugin add fleet@fleet` | Tested: installs and lays out skills and scripts |
+| Antigravity / Gemini | `agy plugin install <path to a clone of this repo>` | Manifest validated with `agy plugin validate --strict`; install not exercised end to end |
+| Cursor, Copilot and any tool that reads `SKILL.md` folders | `python scripts/install_skills.py --dest <that tool's skills directory>` | Installer tested; each tool's own skill loading is not tested here |
+
+Local development without installing: `claude --plugin-dir /path/to/fleet`.
+Skills are plain `SKILL.md` folders (the common Agent Skills layout), so any tool that reads them can use Fleet.
+The helper script works on its own and needs only Python 3.12+ and git.
 
 First run, inside any Git repo of yours (`FLEET=/path/to/fleet`):
 

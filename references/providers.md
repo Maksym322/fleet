@@ -4,7 +4,7 @@ A task's `provider` field names who does the work: `manual` (a human or the
 current agent session) or the name of an AI CLI you have installed (for example
 `claude`, `codex`, `gemini`). Fleet does not call providers itself; the skills
 hand a prompt (`fleet.py prompt`) to the provider you choose. Run
-`python scripts/fleet.py doctor` to see which CLIs are on your PATH.
+`python <PLUGIN_ROOT>/scripts/fleet.py doctor` to see which CLIs are on your PATH.
 
 Guidelines:
 - Use a small/cheap model for scans and docs, a stronger one for auth, concurrency and migrations.

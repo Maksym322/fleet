@@ -1,0 +1,11 @@
+{
+  "name": "fleet",
+  "owner": { "name": "Fleet Contributors" },
+  "plugins": [
+    {
+      "name": "fleet",
+      "source": "./",
+      "description": "Plan, implement, review, release and report on Git tasks with multiple AI workers."
+    }
+  ]
+}

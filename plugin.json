@@ -2,6 +2,5 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fleet",
   "version": "0.1.0",
-  "description": "Plan, implement, review, release and report on Git tasks with multiple AI workers.",
-  "skills": "./skills/"
+  "description": "Plan, implement, review, release and report on Git tasks with multiple AI workers."
 }
