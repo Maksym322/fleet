@@ -4,8 +4,6 @@ Fleet is a Claude Code / Codex plugin that plans, implements, reviews, releases 
 Tasks are small JSON files in your repo; checks produce revision-linked, redacted evidence so "done" means verified.
 Everything is local: no daemon, no network calls, no credentials handled.
 
-> License: MIT is included as a proposal. The maintainer must confirm the license before publishing.
-
 ## Features
 
 - Six skills: `fleet-plan`, `fleet-implement`, `fleet-review`, `fleet-release`, `fleet-status`, `fleet-wait`.

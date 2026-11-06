@@ -6,4 +6,3 @@
 4. Never commit tokens, personal paths, hostnames or real task history. Use synthetic fixtures.
 5. Open a pull request describing the change and how you verified it.
 
-By contributing you agree your work is licensed under the MIT License.
